@@ -1,0 +1,4 @@
+credentials.json
+*.xlsx
+temp_*
+google_excel/credentials.json
