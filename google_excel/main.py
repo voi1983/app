@@ -8,7 +8,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
 import io
 import re
-
+import json
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -282,5 +282,11 @@ def main(folder_url):
 
 if __name__ == '__main__':
     # Замените на вашу ссылку
-    FOLDER_URL = 'https://drive.google.com/drive/folders/1MdwoVZRp27Z12-qXT2pOT7qAnYPtd2S-'
+
+    with open("secret_info.json") as f:
+        secrets = json.load(f)
+
+    api_key = secrets["Path_Google"]
+
+    FOLDER_URL = ''
     main(FOLDER_URL)
