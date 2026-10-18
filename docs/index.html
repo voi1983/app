@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ім'я Прізвище — BAS-розробник</title>
+  <title>Володимир Луценко — BAS-розробник</title>
   <meta name="description" content="Розробка та доопрацювання BAS, CRM, автоматизація бухгалтерії, API-інтеграції та ШІ.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="nav">
     <div class="container nav__inner">
-      <a href="#top" class="logo">&lt;<span data-i18n="initials">ІП</span>/&gt;</a>
+      <a href="#top" class="logo"><img src="logo.svg" alt="" width="32" height="32"><span data-i18n="short">Луценко</span></a>
       <nav class="nav__links">
         <a href="#services" data-i18n="nav.services">Послуги</a>
         <a href="#about" data-i18n="nav.about">Про мене</a>
@@ -29,7 +30,7 @@
     <!-- Головний екран -->
     <section class="hero container">
       <p class="mono accent" data-i18n="hero.hello">// привіт, мене звати</p>
-      <h1 data-i18n="name">Ім'я Прізвище</h1>
+      <h1 data-i18n="name">Володимир Луценко</h1>
       <h2 class="hero__role" data-i18n="role">BAS-розробник та інтегратор</h2>
       <p class="hero__lead" data-i18n="hero.lead">Автоматизую облік і продажі в BAS, з'єдную його з іншими сервісами та прибираю рутину з роботи вашої команди.</p>
       <div class="hero__cta">
@@ -77,12 +78,12 @@
     <section id="about" class="section container">
       <h2 class="section__title"><span class="mono accent">02.</span> <span data-i18n="about.title">Про мене</span></h2>
       <div class="about">
-        <div class="avatar" aria-hidden="true" data-i18n="initials">ІП</div>
+        <div class="avatar"><img src="logo.svg" alt="Логотип: BAS та ШІ"><p class="mono"><span class="stat">22+</span><br><span data-i18n="about.years">роки досвіду</span></p></div>
         <div>
-          <p data-i18n="about.p1">[Заглушка] Понад N років працюю з BAS та 1С: від невеликих доопрацювань до впровадження обліку з нуля.</p>
-          <p data-i18n="about.p2">[Заглушка] Працював з компаніями у сферах торгівлі, виробництва та послуг. Пишу також на Python, коли задача виходить за межі BAS.</p>
+          <p data-i18n="about.p1">22 роки працюю з BAS та 1С: від невеликих доопрацювань до впровадження обліку з нуля.</p>
+          <p data-i18n="about.p2">Поєдную класичну розробку BAS із сучасними інструментами: API-інтеграціями та штучним інтелектом. Коли задача виходить за межі BAS, пишу на Python.</p>
           <ul class="tags">
-            <li>BAS</li><li>1С</li><li>REST API</li><li>Gmail API</li><li>Google Drive API</li><li>Python</li><li>AI / LLM</li>
+            <li>BAS</li><li>1С</li><li>REST API</li><li>Gmail API</li><li>Google Drive API</li><li>Amazon API</li><li>Python</li><li>AI / LLM</li>
           </ul>
         </div>
       </div>
@@ -91,7 +92,7 @@
     <!-- Кейси -->
     <section id="cases" class="section container">
       <h2 class="section__title"><span class="mono accent">03.</span> <span data-i18n="cases.title">Кейси</span></h2>
-      <div class="grid">
+      <div class="grid grid--2">
         <article class="card case">
           <p class="mono accent case__tag">Python · Google Drive API</p>
           <h3 data-i18n="c1.t">Зведення прайсів постачальників</h3>
@@ -100,16 +101,22 @@
           <a class="case__link mono" href="https://github.com/voi1983/app" target="_blank" rel="noopener">GitHub →</a>
         </article>
         <article class="card case">
-          <p class="mono accent case__tag">BAS · API</p>
-          <h3 data-i18n="c2.t">[Заглушка] Назва кейсу</h3>
-          <p><b data-i18n="label.task">Задача:</b> <span data-i18n="c2.task">опис задачі клієнта.</span></p>
-          <p><b data-i18n="label.done">Рішення:</b> <span data-i18n="c2.done">що зроблено і який результат, бажано в цифрах.</span></p>
+          <p class="mono accent case__tag">BAS · Amazon API</p>
+          <h3 data-i18n="c2.t">Інтеграція BAS з Amazon</h3>
+          <p><b data-i18n="label.task">Задача:</b> <span data-i18n="c2.task">продажі йдуть на Amazon, а облік ведеться в BAS, і дані доводиться переносити вручну.</span></p>
+          <p><b data-i18n="label.done">Рішення:</b> <span data-i18n="c2.done">інтеграція через Amazon API: замовлення та дані про товари автоматично потрапляють у BAS.</span></p>
         </article>
         <article class="card case">
-          <p class="mono accent case__tag">BAS · Gmail</p>
-          <h3 data-i18n="c3.t">[Заглушка] Назва кейсу</h3>
-          <p><b data-i18n="label.task">Задача:</b> <span data-i18n="c3.task">опис задачі клієнта.</span></p>
-          <p><b data-i18n="label.done">Рішення:</b> <span data-i18n="c3.done">що зроблено і який результат, бажано в цифрах.</span></p>
+          <p class="mono accent case__tag">BAS · AI · OCR</p>
+          <h3 data-i18n="c3.t">Розпізнавання документів за допомогою ШІ</h3>
+          <p><b data-i18n="label.task">Задача:</b> <span data-i18n="c3.task">бухгалтер вручну переносить у базу дані з рахунків, накладних і актів.</span></p>
+          <p><b data-i18n="label.done">Рішення:</b> <span data-i18n="c3.done">ШІ читає скан або PDF і створює в BAS готовий документ, який залишається лише перевірити.</span></p>
+        </article>
+        <article class="card case">
+          <p class="mono accent case__tag">BAS · AI · LLM</p>
+          <h3 data-i18n="c4.t">Заявки з тексту за допомогою ШІ</h3>
+          <p><b data-i18n="label.task">Задача:</b> <span data-i18n="c4.task">клієнти надсилають замовлення довільним текстом у пошту чи месенджер.</span></p>
+          <p><b data-i18n="label.done">Рішення:</b> <span data-i18n="c4.done">ШІ розбирає текст, знаходить контрагента, товари й кількість і створює замовлення в BAS.</span></p>
         </article>
       </div>
     </section>
@@ -130,14 +137,15 @@
       <h2 class="section__title"><span class="mono accent">05.</span> <span data-i18n="contact.title">Контакти</span></h2>
       <p class="contact__lead" data-i18n="contact.lead">Маєте задачу? Напишіть, і я відповім протягом робочого дня.</p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="https://t.me/USERNAME" target="_blank" rel="noopener" data-i18n="contact.tg">Написати в Telegram</a>
-        <a class="btn" href="mailto:email@example.com" data-i18n="contact.mail">Написати на email</a>
+        <a class="btn btn--primary" href="https://t.me/Volodymyr_zx_9" target="_blank" rel="noopener" data-i18n="contact.tg">Написати в Telegram</a>
+        <a class="btn" href="mailto:lucenkin.v@ukr.net" data-i18n="contact.mail">Написати на email</a>
       </div>
+      <p class="contact__handles mono">@Volodymyr_zx_9 · lucenkin.v@ukr.net</p>
     </section>
   </main>
 
   <footer class="footer container mono">
-    © <span id="year"></span> <span data-i18n="name">Ім'я Прізвище</span>
+    © <span id="year"></span> <span data-i18n="name">Володимир Луценко</span>
   </footer>
 
   <script src="script.js"></script>

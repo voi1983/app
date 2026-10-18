@@ -36,7 +36,7 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid var(--border);
 }
 .nav__inner { display: flex; align-items: center; gap: 24px; height: 60px; }
-.logo { font-family: var(--mono); font-weight: 600; color: var(--accent); }
+.logo { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-weight: 600; color: #fff; }
 .nav__links { display: flex; gap: 20px; margin-left: auto; font-size: .95rem; }
 .nav__links a { color: var(--muted); transition: color .2s; }
 .nav__links a:hover { color: var(--accent); }
@@ -69,6 +69,7 @@ p { margin: 0 0 1em; }
 .section__title { font-size: 1.8rem; margin-bottom: 32px; }
 
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.grid--2 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); }
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -82,12 +83,10 @@ p { margin: 0 0 1em; }
 
 /* Про мене */
 .about { display: flex; gap: 32px; align-items: flex-start; }
-.avatar {
-  flex: 0 0 140px; height: 140px;
-  display: grid; place-items: center;
-  border: 2px solid var(--accent); border-radius: 50%;
-  font-family: var(--mono); font-size: 2.4rem; color: var(--accent);
-}
+.avatar { flex: 0 0 160px; text-align: center; }
+.avatar img { width: 140px; height: 140px; display: block; margin: 0 auto 12px; }
+.avatar p { color: var(--muted); font-size: .85rem; line-height: 1.3; }
+.stat { font-size: 2rem; font-weight: 600; color: var(--accent); }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
 .tags li {
   font-family: var(--mono); font-size: .85rem;
@@ -113,6 +112,7 @@ p { margin: 0 0 1em; }
 .contact { text-align: center; }
 .contact .hero__cta { justify-content: center; }
 .contact__lead { color: var(--muted); font-size: 1.1rem; }
+.contact__handles { margin-top: 20px; color: var(--muted); font-size: .9rem; }
 
 .footer {
   padding: 32px 16px; text-align: center;
@@ -126,5 +126,6 @@ p { margin: 0 0 1em; }
   .hero { padding: 72px 16px 64px; }
   .section { padding: 56px 16px; }
   .about { flex-direction: column; }
-  .avatar { flex-basis: auto; width: 110px; height: 110px; font-size: 2rem; }
+  .avatar { flex-basis: auto; display: flex; align-items: center; gap: 16px; text-align: left; }
+  .avatar img { width: 90px; height: 90px; margin: 0; }
 }
