@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Мікросхема з літерою B (BAS) та іскрою (ШІ) -->
+  <g stroke="#3ddc97" stroke-width="3" stroke-linecap="round">
+    <path d="M22 4v6M32 4v6M42 4v6M22 54v6M32 54v6M42 54v6M4 22h6M4 32h6M4 42h6M54 22h6M54 32h6M54 42h6"/>
+    <rect x="10" y="10" width="44" height="44" rx="9" fill="#0b0f14"/>
+  </g>
+  <path d="M22 20h9.5a6.5 6.5 0 0 1 0 13H22zM22 33h11a6.5 6.5 0 0 1 0 13H22z" stroke="#fff" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M45 14c.6 3.6 1.9 4.9 5.5 5.5-3.6.6-4.9 1.9-5.5 5.5-.6-3.6-1.9-4.9-5.5-5.5 3.6-.6 4.9-1.9 5.5-5.5z" fill="#3ddc97"/>
+</svg>
