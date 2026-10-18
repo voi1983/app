@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ім'я Прізвище — BAS-розробник</title>
+  <meta name="description" content="Розробка та доопрацювання BAS, CRM, автоматизація бухгалтерії, API-інтеграції та ШІ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo">&lt;<span data-i18n="initials">ІП</span>/&gt;</a>
+      <nav class="nav__links">
+        <a href="#services" data-i18n="nav.services">Послуги</a>
+        <a href="#about" data-i18n="nav.about">Про мене</a>
+        <a href="#cases" data-i18n="nav.cases">Кейси</a>
+        <a href="#process" data-i18n="nav.process">Як я працюю</a>
+        <a href="#contact" data-i18n="nav.contact">Контакти</a>
+      </nav>
+      <button class="lang" id="lang-toggle" type="button" aria-label="Switch language">EN</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Головний екран -->
+    <section class="hero container">
+      <p class="mono accent" data-i18n="hero.hello">// привіт, мене звати</p>
+      <h1 data-i18n="name">Ім'я Прізвище</h1>
+      <h2 class="hero__role" data-i18n="role">BAS-розробник та інтегратор</h2>
+      <p class="hero__lead" data-i18n="hero.lead">Автоматизую облік і продажі в BAS, з'єдную його з іншими сервісами та прибираю рутину з роботи вашої команди.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#contact" data-i18n="hero.cta">Обговорити задачу</a>
+        <a class="btn" href="#cases" data-i18n="hero.cases">Подивитися кейси</a>
+      </div>
+    </section>
+
+    <!-- Послуги -->
+    <section id="services" class="section container">
+      <h2 class="section__title"><span class="mono accent">01.</span> <span data-i18n="services.title">Послуги</span></h2>
+      <div class="grid">
+        <article class="card">
+          <h3 data-i18n="s1.t">Розробка та доопрацювання BAS</h3>
+          <p data-i18n="s1.d">Налаштування й доробка конфігурацій BAS (Бухгалтерія, Управління торгівлею, ERP) під процеси вашого бізнесу.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="s2.t">CRM на базі BAS</h3>
+          <p data-i18n="s2.d">Облік клієнтів, угод і продажів в одній системі разом з бухгалтерією, без зайвих сервісів.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="s3.t">Автоматизація бухгалтерії</h3>
+          <p data-i18n="s3.d">Звіти, обробки та документообіг, які забирають рутину в бухгалтера.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="s4.t">Інтеграція через API</h3>
+          <p data-i18n="s4.d">Обмін даними BAS з сайтами, маркетплейсами, банками, службами доставки та іншими системами.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="s5.t">Gmail ↔ BAS</h3>
+          <p data-i18n="s5.d">Листи, вкладення й замовлення з пошти автоматично потрапляють у BAS, а документи з BAS йдуть клієнтам на пошту.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="s6.t">Інтеграція зі штучним інтелектом</h3>
+          <p data-i18n="s6.d">Розпізнавання документів, аналіз даних і розумні помічники всередині BAS.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="s7.t">Рішення під нестандартні задачі</h3>
+          <p data-i18n="s7.d">Окремі інструменти для вузьких задач, наприклад автоматичне зведення прайсів постачальників з Google Drive.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Про мене -->
+    <section id="about" class="section container">
+      <h2 class="section__title"><span class="mono accent">02.</span> <span data-i18n="about.title">Про мене</span></h2>
+      <div class="about">
+        <div class="avatar" aria-hidden="true" data-i18n="initials">ІП</div>
+        <div>
+          <p data-i18n="about.p1">[Заглушка] Понад N років працюю з BAS та 1С: від невеликих доопрацювань до впровадження обліку з нуля.</p>
+          <p data-i18n="about.p2">[Заглушка] Працював з компаніями у сферах торгівлі, виробництва та послуг. Пишу також на Python, коли задача виходить за межі BAS.</p>
+          <ul class="tags">
+            <li>BAS</li><li>1С</li><li>REST API</li><li>Gmail API</li><li>Google Drive API</li><li>Python</li><li>AI / LLM</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Кейси -->
+    <section id="cases" class="section container">
+      <h2 class="section__title"><span class="mono accent">03.</span> <span data-i18n="cases.title">Кейси</span></h2>
+      <div class="grid">
+        <article class="card case">
+          <p class="mono accent case__tag">Python · Google Drive API</p>
+          <h3 data-i18n="c1.t">Зведення прайсів постачальників</h3>
+          <p><b data-i18n="label.task">Задача:</b> <span data-i18n="c1.task">прайси приходять у різних форматах, і зводити їх вручну довго.</span></p>
+          <p><b data-i18n="label.done">Рішення:</b> <span data-i18n="c1.done">скрипт сам забирає Excel-файли з папки Google Drive, розпізнає моделі, розміри та ціни і збирає одну таблицю.</span></p>
+          <a class="case__link mono" href="https://github.com/voi1983/app" target="_blank" rel="noopener">GitHub →</a>
+        </article>
+        <article class="card case">
+          <p class="mono accent case__tag">BAS · API</p>
+          <h3 data-i18n="c2.t">[Заглушка] Назва кейсу</h3>
+          <p><b data-i18n="label.task">Задача:</b> <span data-i18n="c2.task">опис задачі клієнта.</span></p>
+          <p><b data-i18n="label.done">Рішення:</b> <span data-i18n="c2.done">що зроблено і який результат, бажано в цифрах.</span></p>
+        </article>
+        <article class="card case">
+          <p class="mono accent case__tag">BAS · Gmail</p>
+          <h3 data-i18n="c3.t">[Заглушка] Назва кейсу</h3>
+          <p><b data-i18n="label.task">Задача:</b> <span data-i18n="c3.task">опис задачі клієнта.</span></p>
+          <p><b data-i18n="label.done">Рішення:</b> <span data-i18n="c3.done">що зроблено і який результат, бажано в цифрах.</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Як я працюю -->
+    <section id="process" class="section container">
+      <h2 class="section__title"><span class="mono accent">04.</span> <span data-i18n="process.title">Як я працюю</span></h2>
+      <ol class="steps">
+        <li><span class="mono accent">01</span><h3 data-i18n="p1.t">Заявка</h3><p data-i18n="p1.d">Ви описуєте задачу в Telegram або на email.</p></li>
+        <li><span class="mono accent">02</span><h3 data-i18n="p2.t">Оцінка</h3><p data-i18n="p2.d">Уточнюю деталі, називаю терміни та вартість.</p></li>
+        <li><span class="mono accent">03</span><h3 data-i18n="p3.t">Розробка</h3><p data-i18n="p3.d">Роблю й тестую на копії бази, показую проміжний результат.</p></li>
+        <li><span class="mono accent">04</span><h3 data-i18n="p4.t">Здача та підтримка</h3><p data-i18n="p4.d">Переношу в робочу базу, навчаю команду і супроводжую після запуску.</p></li>
+      </ol>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact" class="section container contact">
+      <h2 class="section__title"><span class="mono accent">05.</span> <span data-i18n="contact.title">Контакти</span></h2>
+      <p class="contact__lead" data-i18n="contact.lead">Маєте задачу? Напишіть, і я відповім протягом робочого дня.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="https://t.me/USERNAME" target="_blank" rel="noopener" data-i18n="contact.tg">Написати в Telegram</a>
+        <a class="btn" href="mailto:email@example.com" data-i18n="contact.mail">Написати на email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container mono">
+    © <span id="year"></span> <span data-i18n="name">Ім'я Прізвище</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
